@@ -30,8 +30,8 @@ function playGame() {
     for (let i = 0; i < 4; i++) {
         const playerChoice = prompt("Choose 'Rock', 'Paper' or 'Scissors'").toLowerCase();
         const computerChoice = getComputerChoice(computerChoices);
+        console.log(`playerChoice = ${playerChoice} computerChoice = ${computerChoice}`)
         console.log(playRound(playerChoice, computerChoice));
-        console.log(`playerChoice = ${playerChoice}, computerChoice = ${computerChoice}`)
     }
 
     if (playerScore > computerScore) {
@@ -43,4 +43,3 @@ function playGame() {
 
 
 playGame();
-console.log(`playerScore = ${playerScore}, computerScore = ${computerScore}`)
